@@ -434,7 +434,5 @@ if (typeof document !== 'undefined') {
     initInteractions();
   }
 
-  window.addEventListener('load', () => {
-    document.title = 'SIZE:' + window.innerWidth + 'x' + window.innerHeight + ' DOC:' + document.documentElement.scrollWidth + 'x' + document.documentElement.scrollHeight;
-  });
+
 }
