@@ -18,10 +18,6 @@ A fully responsive SaaS landing page built with vanilla HTML, CSS, and JavaScrip
 |---|---|
 | ![Desktop](./screenshots/desktop-1440.png) | ![Tablet](./screenshots/tablet-768.png) |
 
-| Mobile (390px) | Mobile (360px) |
-|---|---|
-| ![Mobile 390](./screenshots/mobile-390.png) | ![Mobile 360](./screenshots/mobile-360.png) |
-
 ---
 
 ## 🚀 Setup Instructions
