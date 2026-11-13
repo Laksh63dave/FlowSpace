@@ -1,0 +1,64 @@
+/* ==========================================================================
+   FLOWSPACE — ANIMATION UTILITIES & TRANSITIONS
+   ========================================================================== */
+
+/* GPU Acceleration & Rendering Hints */
+.dashboard-frame,
+.bento-card,
+.floating-badge,
+.step-card,
+.pricing-card,
+.contact-wrapper {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Subtle continuous pulse for live indicators */
+@keyframes softPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(48, 209, 88, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(48, 209, 88, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(48, 209, 88, 0);
+  }
+}
+
+.pulse-indicator,
+.status-pulse-green::before {
+  animation: softPulse 2.8s infinite ease-in-out;
+}
+
+/* Respect user's system accessibility preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .dashboard-frame,
+  .bento-card,
+  .floating-badge,
+  .step-card,
+  .pricing-card,
+  .contact-wrapper {
+    will-change: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.reduced-motion * {
+  animation: none !important;
+  transition: none !important;
+}

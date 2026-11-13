@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowspace — Make room for better work</title>
+  <meta name="description" content="Flowspace is an AI-powered productivity platform that organizes tasks, manages projects, tracks focus, and illuminates your workflow." />
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23171717'/><path d='M9 11h14M9 16h10M9 21h14' stroke='%23477BFF' stroke-width='2.5' stroke-linecap='round'/></svg>" />
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+</head>
+<body>
+  <!-- ==================================================
+       SECTION 01 — NAVIGATION BAR
+       ================================================== -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container">
+      <!-- Wordmark & Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Flowspace Home">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect width="28" height="28" rx="8" fill="#171717" />
+          <path d="M8 9H20M8 14H16M8 19H20" stroke="#477BFF" stroke-width="2.2" stroke-linecap="round" />
+        </svg>
+        <span class="brand-name">Flowspace</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+          <li><a href="#showcase" class="nav-link">Showcase</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm btn-header">Get Started</a>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#features" class="mobile-nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="mobile-nav-link">How it works</a></li>
+          <li><a href="#showcase" class="mobile-nav-link">Showcase</a></li>
+          <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================================================
+         SECTION 02 — HERO SECTION
+         ================================================== -->
+    <section class="section-hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        
+        <!-- Hero Header Lockup -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Flowspace 2.0 is now live</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Make room for <br class="hide-mobile" />
+            <span class="hero-highlight">better work.</span>
+          </h1>
+
+          <p class="hero-description">
+            One intelligent workspace to organize your tasks, manage your projects, and make every day more productive.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <span>Explore Features</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="btn-arrow" aria-hidden="true">
+                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Custom HTML/CSS Hero Productivity Dashboard Mockup -->
+        <div class="hero-dashboard-wrapper">
+          <div class="dashboard-frame" role="region" aria-label="Flowspace Interactive Dashboard Preview">
+            <!-- Mac-style Window Title Bar -->
+            <div class="dashboard-window-bar">
+              <div class="window-controls">
+                <span class="ctrl-dot ctrl-close"></span>
+                <span class="ctrl-dot ctrl-min"></span>
+                <span class="ctrl-dot ctrl-expand"></span>
+              </div>
+              <div class="window-breadcrumbs">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="crumb-icon"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                <span>Workspace</span>
+                <span class="crumb-separator">/</span>
+                <span class="crumb-active">Q3 Product Sprint</span>
+              </div>
+              <div class="window-status-pill">
+                <span class="pulse-indicator"></span>
+                <span>Live Sync</span>
+              </div>
+            </div>
+
+            <!-- Dashboard Inner Grid -->
+            <div class="dashboard-body">
+              <!-- Left Sidebar Navigation -->
+              <aside class="dash-sidebar" aria-label="Dashboard Navigation">
+                <div class="dash-workspace-selector">
+                  <div class="workspace-avatar">FS</div>
+                  <div class="workspace-meta">
+                    <span class="workspace-title">Design Studio</span>
+                    <span class="workspace-plan">Pro Tier</span>
+                  </div>
+                </div>
+
+                <nav class="dash-nav">
+                  <span class="dash-nav-category">Main</span>
+                  <a href="#hero" class="dash-nav-item active">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+                    <span>Overview</span>
+                  </a>
+                  <a href="#hero" class="dash-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    <span>My Tasks</span>
+                    <span class="dash-badge">8</span>
+                  </a>
+                  <a href="#hero" class="dash-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>Focus Flow</span>
+                  </a>
+                  <a href="#hero" class="dash-nav-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    <span>Analytics</span>
+                  </a>
+                </nav>
+
+                <div class="dash-user-profile">
+                  <div class="user-avatar-badge">
+                    <span class="avatar-initials">DA</span>
+                    <span class="user-online-dot"></span>
+                  </div>
+                  <div class="user-info">
+                    <span class="user-name">Dave Lawson</span>
+                    <span class="user-role">Lead Product</span>
+                  </div>
+                </div>
+              </aside>
+
+              <!-- Main Workspace Canvas -->
+              <div class="dash-main">
+                <!-- Welcome & Focus Strip -->
+                <header class="dash-header">
+                  <div class="dash-header-title">
+                    <h2>Good morning, Dave</h2>
+                    <p>You have 3 deep work blocks scheduled today.</p>
+                  </div>
+                  <div class="dash-focus-mode-chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    <span>Focus Mode <strong>Active</strong></span>
+                  </div>
+                </header>
+
+                <!-- Metric Cards Row -->
+                <div class="dash-kpi-grid">
+                  <div class="kpi-card">
+                    <div class="kpi-label">Today's Focus Time</div>
+                    <div class="kpi-value">4h 15m</div>
+                    <div class="kpi-trend positive">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+                      <span>+38m vs yesterday</span>
+                    </div>
+                  </div>
+
+                  <div class="kpi-card">
+                    <div class="kpi-label">Tasks Completed</div>
+                    <div class="kpi-value">18 <span class="kpi-sub">/ 22</span></div>
+                    <div class="kpi-progress-bar">
+                      <div class="kpi-progress-fill" style="width: 82%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="kpi-card">
+                    <div class="kpi-label">Workflow Velocity</div>
+                    <div class="kpi-value">94.8%</div>
+                    <div class="kpi-trend positive">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+                      <span>Optimal pace</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Split Workspace View: Active Tasks + Analytics / Insights -->
+                <div class="dash-content-grid">
+                  <!-- Task List Panel -->
+                  <div class="dash-panel task-panel">
+                    <div class="panel-header">
+                      <div class="panel-title-group">
+                        <span class="panel-heading">Sprint Priorities</span>
+                        <span class="panel-count">3 remaining</span>
+                      </div>
+                      <span class="panel-badge-soft">Auto-Prioritized</span>
+                    </div>
+
+                    <div class="task-list">
+                      <div class="task-item">
+                        <span class="task-checkbox checked">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </span>
+                        <div class="task-details">
+                          <span class="task-title strike">Finalize design tokens for v2.0</span>
+                          <span class="task-meta">Completed 10:45 AM</span>
+                        </div>
+                        <span class="tag-status tag-done">Done</span>
+                      </div>
+
+                      <div class="task-item active-task">
+                        <span class="task-checkbox"></span>
+                        <div class="task-details">
+                          <span class="task-title">Implement Bento Grid features layout</span>
+                          <span class="task-meta">Due today • 90m estimated</span>
+                        </div>
+                        <span class="tag-status tag-urgent">P1 Urgent</span>
+                      </div>
+
+                      <div class="task-item">
+                        <span class="task-checkbox"></span>
+                        <div class="task-details">
+                          <span class="task-title">Review team workload and velocity report</span>
+                          <span class="task-meta">Due tomorrow • Design team</span>
+                        </div>
+                        <span class="tag-status tag-review">Review</span>
+                      </div>
+
+                      <div class="task-item">
+                        <span class="task-checkbox"></span>
+                        <div class="task-details">
+                          <span class="task-title">Integrate Lenis smooth scroll ticker</span>
+                          <span class="task-meta">Frontend chore</span>
+                        </div>
+                        <span class="tag-status tag-normal">Normal</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Insights & Visual Chart Panel -->
+                  <div class="dash-panel insights-panel">
+                    <div class="panel-header">
+                      <span class="panel-heading">Daily Focus Distribution</span>
+                      <span class="panel-caption">Week 46</span>
+                    </div>
+
+                    <!-- Mini Vector Chart (Inline SVG) -->
+                    <div class="chart-container" aria-label="Weekly Productivity Chart">
+                      <div class="bar-chart">
+                        <div class="chart-col">
+                          <div class="bar-track"><div class="bar-fill" style="height: 65%;"></div></div>
+                          <span class="chart-day">Mon</span>
+                        </div>
+                        <div class="chart-col">
+                          <div class="bar-track"><div class="bar-fill" style="height: 85%;"></div></div>
+                          <span class="chart-day">Tue</span>
+                        </div>
+                        <div class="chart-col">
+                          <div class="bar-track"><div class="bar-fill" style="height: 72%;"></div></div>
+                          <span class="chart-day">Wed</span>
+                        </div>
+                        <div class="chart-col">
+                          <div class="bar-track"><div class="bar-fill active-day" style="height: 92%;"></div></div>
+                          <span class="chart-day current">Thu</span>
+                        </div>
+                        <div class="chart-col">
+                          <div class="bar-track"><div class="bar-fill" style="height: 50%;"></div></div>
+                          <span class="chart-day">Fri</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- AI Context Summary Chip -->
+                    <div class="ai-insight-box">
+                      <div class="ai-box-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                      </div>
+                      <p class="ai-box-text">
+                        <strong>AI Flow Insight:</strong> Your peak focus occurs between 9:30 AM and 11:45 AM. Meetings minimized.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 03 — FEATURES (ASYMMETRIC BENTO GRID)
+         ================================================== -->
+    <section class="section-features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Capabilities</span>
+          <h2 class="section-title" id="features-title">Built for the rhythms of modern work.</h2>
+          <p class="section-description">
+            Flowspace brings structure without friction, helping you turn intent into clear execution.
+          </p>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="bento-grid">
+          <!-- Feature 01: Smart Task Management (Wide 8-Column Card) -->
+          <article class="bento-card bento-wide" aria-labelledby="feat-task-title">
+            <div class="bento-content">
+              <div class="bento-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <h3 class="bento-title" id="feat-task-title">Smart Task Management</h3>
+              <p class="bento-description">
+                Organize priorities, manage daily tasks, and keep your workflow structured with AI-assisted scheduling.
+              </p>
+            </div>
+            
+            <!-- Visual Graphic: Interactive Kanban/Task Flow Mockup -->
+            <div class="bento-visual bento-visual-task">
+              <div class="mini-board">
+                <div class="mini-col">
+                  <span class="mini-col-label">Prioritized (3)</span>
+                  <div class="mini-task-card">
+                    <div class="mini-task-bar p1"></div>
+                    <div class="mini-task-text">Design system alignment</div>
+                    <span class="mini-task-badge">Today</span>
+                  </div>
+                  <div class="mini-task-card">
+                    <div class="mini-task-bar p2"></div>
+                    <div class="mini-task-text">Architecture documentation</div>
+                    <span class="mini-task-badge">Q3 Core</span>
+                  </div>
+                </div>
+                <div class="mini-col">
+                  <span class="mini-col-label">In Flow (1)</span>
+                  <div class="mini-task-card highlighted-task">
+                    <div class="mini-task-bar p1"></div>
+                    <div class="mini-task-text">Component accessibility audit</div>
+                    <div class="mini-task-status">
+                      <span class="status-pulse-blue"></span>
+                      <span>Focused • 45m left</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Feature 02: Intelligent Insights (4-Column Tall Card) -->
+          <article class="bento-card bento-compact" aria-labelledby="feat-insights-title">
+            <div class="bento-content">
+              <div class="bento-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+              </div>
+              <h3 class="bento-title" id="feat-insights-title">Intelligent Insights</h3>
+              <p class="bento-description">
+                Understand productivity through meaningful analytics and visual insights that prevent burnout.
+              </p>
+            </div>
+
+            <!-- Visual Graphic: Radial Gauge & Metrics -->
+            <div class="bento-visual bento-visual-insights">
+              <div class="mini-gauge-card">
+                <div class="radial-gauge-wrapper">
+                  <svg class="radial-gauge-svg" width="110" height="110" viewBox="0 0 100 100">
+                    <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                    <circle class="gauge-meter" cx="50" cy="50" r="40" stroke-dasharray="251.2" stroke-dashoffset="35" />
+                  </svg>
+                  <div class="gauge-label">
+                    <span class="gauge-number">92%</span>
+                    <span class="gauge-text">Efficiency</span>
+                  </div>
+                </div>
+                <div class="gauge-details">
+                  <span class="detail-line">Deep work: <strong>5.4 hrs/day</strong></span>
+                  <span class="detail-line">Context shifts: <strong>-42%</strong></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Feature 03: Seamless Collaboration (Full 12-Column Split Card) -->
+          <article class="bento-card bento-full" aria-labelledby="feat-collab-title">
+            <div class="bento-split">
+              <div class="bento-content">
+                <div class="bento-icon-wrapper">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="bento-title" id="feat-collab-title">Seamless Collaboration</h3>
+                <p class="bento-description">
+                  Keep projects and teams organized in one shared workspace with instant sync and zero overhead.
+                </p>
+                <div class="collab-points">
+                  <div class="collab-point-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Real-time presence and asynchronous focus updates</span>
+                  </div>
+                  <div class="collab-point-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Frictionless delegation without interrupting deep work</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual Graphic: Team Presence Cards & Activity Feed -->
+              <div class="bento-visual bento-visual-collab">
+                <div class="collab-stack">
+                  <div class="collab-card">
+                    <div class="collab-avatar user-1">EM</div>
+                    <div class="collab-info">
+                      <span class="collab-name">Elena Meyer</span>
+                      <span class="collab-action">Updating API contracts</span>
+                    </div>
+                    <span class="collab-badge badge-focus">Focusing</span>
+                  </div>
+
+                  <div class="collab-card highlighted-collab">
+                    <div class="collab-avatar user-2">TL</div>
+                    <div class="collab-info">
+                      <span class="collab-name">Tyler Lee</span>
+                      <span class="collab-action">Merged Design System v2</span>
+                    </div>
+                    <span class="collab-badge badge-active">Active now</span>
+                  </div>
+
+                  <div class="collab-card">
+                    <div class="collab-avatar user-3">SK</div>
+                    <div class="collab-info">
+                      <span class="collab-name">Sarah Kim</span>
+                      <span class="collab-action">Sprint backlog prioritized</span>
+                    </div>
+                    <span class="collab-badge badge-done">Completed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 04 — HOW IT WORKS
+         ================================================== -->
+    <section class="section-how" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-eyebrow">The Method</span>
+          <h2 class="section-title" id="how-title">Everything flows. Naturally.</h2>
+          <p class="section-description">
+            Three intuitive steps designed to remove friction between strategic thinking and tactical execution.
+          </p>
+        </div>
+
+        <!-- 3-Step Editorial Cards -->
+        <div class="steps-grid">
+          <!-- Step 01 -->
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Create your workspace</h3>
+              <p class="step-description">
+                Set up unified team or individual spaces tailored to your project goals, workflows, and communication preferences.
+              </p>
+              <div class="step-meta">
+                <span class="step-pill">Instant 60s Setup</span>
+                <span class="step-pill">Custom Templates</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Organize your workflow</h3>
+              <p class="step-description">
+                Structure tasks by cognitive priority, urgency, and project phases with intelligent auto-grouping and energy-aware timelines.
+              </p>
+              <div class="step-meta">
+                <span class="step-pill">Cognitive Scheduling</span>
+                <span class="step-pill">Dependency Mapping</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Track your progress</h3>
+              <p class="step-description">
+                Monitor team velocity, celebrate shipped milestones, and gain clarity with automated weekly insights and effortless recaps.
+              </p>
+              <div class="step-meta">
+                <span class="step-pill">Velocity Analytics</span>
+                <span class="step-pill">Automated Recaps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 05 — PRODUCT SHOWCASE (DARK CANVAS)
+         ================================================== -->
+    <section class="section-showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="container">
+        <div class="section-header text-center dark-header">
+          <span class="section-eyebrow eyebrow-dark">Command Center</span>
+          <h2 class="section-title title-dark" id="showcase-title">Your work, in perfect perspective.</h2>
+          <p class="section-description desc-dark">
+            Step back from fragmented tools and see your entire creative velocity mapped in one cohesive, dark-mode cockpit.
+          </p>
+        </div>
+
+        <!-- Showcase Mockup Canvas with Floating Metric Badges -->
+        <div class="showcase-stage">
+          <!-- Floating Badge 1 (North-West) -->
+          <div class="floating-badge badge-nw" aria-label="Productivity Score Badge">
+            <div class="f-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#477BFF" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="f-badge-data">
+              <span class="f-badge-title">Productivity Score</span>
+              <span class="f-badge-val">96 / 100 <span class="f-badge-sub">Top 2%</span></span>
+            </div>
+          </div>
+
+          <!-- Floating Badge 2 (North-East) -->
+          <div class="floating-badge badge-ne" aria-label="Completed Tasks Badge">
+            <div class="f-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="f-badge-data">
+              <span class="f-badge-title">Completed Today</span>
+              <span class="f-badge-val">38 Tasks <span class="f-badge-sub">+12% sprint</span></span>
+            </div>
+          </div>
+
+          <!-- Floating Badge 3 (South-West) -->
+          <div class="floating-badge badge-sw" aria-label="Weekly Progress Badge">
+            <div class="f-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#BF5AF2" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/></svg>
+            </div>
+            <div class="f-badge-data">
+              <span class="f-badge-title">Weekly Progress</span>
+              <span class="f-badge-val">4 Days Ahead <span class="f-badge-sub">On target</span></span>
+            </div>
+          </div>
+
+          <!-- Floating Badge 4 (South-East) -->
+          <div class="floating-badge badge-se" aria-label="Project Status Badge">
+            <div class="f-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF9F0A" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
+            <div class="f-badge-data">
+              <span class="f-badge-title">Project Status</span>
+              <span class="f-badge-val">Design System v2.4 <span class="f-badge-sub">Active</span></span>
+            </div>
+          </div>
+
+          <!-- Central Dark Cockpit Screen -->
+          <div class="showcase-cockpit">
+            <div class="cockpit-bar">
+              <div class="window-controls">
+                <span class="ctrl-dot ctrl-close"></span>
+                <span class="ctrl-dot ctrl-min"></span>
+                <span class="ctrl-dot ctrl-expand"></span>
+              </div>
+              <span class="cockpit-title">flowspace.app / focus-cockpit / executive-view</span>
+              <span class="cockpit-badge">High Performance</span>
+            </div>
+
+            <div class="cockpit-grid">
+              <!-- Left Column: Velocity Curve & Focus Metrics -->
+              <div class="cockpit-col-left">
+                <div class="cockpit-card">
+                  <div class="cockpit-card-head">
+                    <span>Weekly Sprint Velocity</span>
+                    <span class="text-green">+34.2%</span>
+                  </div>
+                  <!-- Inline SVG Sparkline Line Graph -->
+                  <div class="sparkline-wrapper">
+                    <svg class="sparkline-svg" viewBox="0 0 300 80" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#477BFF" stop-opacity="0.35"/>
+                          <stop offset="100%" stop-color="#477BFF" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0 65 Q 40 40, 80 50 T 150 25 T 220 35 T 300 10 L 300 80 L 0 80 Z" fill="url(#sparkGrad)"/>
+                      <path d="M0 65 Q 40 40, 80 50 T 150 25 T 220 35 T 300 10" fill="none" stroke="#477BFF" stroke-width="3" stroke-linecap="round"/>
+                      <circle cx="300" cy="10" r="4" fill="#477BFF"/>
+                    </svg>
+                  </div>
+                  <div class="sparkline-labels">
+                    <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                  </div>
+                </div>
+
+                <div class="cockpit-metrics-row">
+                  <div class="cockpit-mini-metric">
+                    <span class="c-label">Average Session</span>
+                    <span class="c-val">74 mins</span>
+                  </div>
+                  <div class="cockpit-mini-metric">
+                    <span class="c-label">Focus Integrity</span>
+                    <span class="c-val">99.1%</span>
+                  </div>
+                  <div class="cockpit-mini-metric">
+                    <span class="c-label">Team Resonance</span>
+                    <span class="c-val">9.8/10</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Active Live Stream -->
+              <div class="cockpit-col-right">
+                <div class="cockpit-stream-card">
+                  <div class="cockpit-card-head">
+                    <span>Live Team Stream</span>
+                    <span class="status-pulse-green">Syncing</span>
+                  </div>
+                  <div class="stream-list">
+                    <div class="stream-item">
+                      <div class="stream-dot"></div>
+                      <div class="stream-meta">
+                        <span class="stream-action">Sprint Milestone Reached</span>
+                        <span class="stream-time">2 mins ago</span>
+                      </div>
+                    </div>
+                    <div class="stream-item">
+                      <div class="stream-dot blue"></div>
+                      <div class="stream-meta">
+                        <span class="stream-action">Accessibility standard WCAG AA passed</span>
+                        <span class="stream-time">14 mins ago</span>
+                      </div>
+                    </div>
+                    <div class="stream-item">
+                      <div class="stream-dot purple"></div>
+                      <div class="stream-meta">
+                        <span class="stream-action">Deep focus window logged (3.2h)</span>
+                        <span class="stream-time">42 mins ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 06 — PRICING
+         ================================================== -->
+    <section class="section-pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Investment</span>
+          <h2 class="section-title" id="pricing-title">Simple plans for serious focus.</h2>
+          <p class="section-description">
+            Transparent pricing designed for individuals and teams seeking calm productivity.
+          </p>
+        </div>
+
+        <!-- 2-Tier Pricing Grid -->
+        <div class="pricing-grid">
+          <!-- Plan 01 — Starter -->
+          <div class="pricing-card" id="plan-starter">
+            <div class="plan-header">
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-tagline">Ideal for individuals building a personal productivity baseline.</p>
+              <div class="plan-price">
+                <span class="price-amount">Free</span>
+                <span class="price-period">forever</span>
+              </div>
+            </div>
+
+            <ul class="plan-features" aria-label="Starter features list">
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Basic workspace</span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Task management</span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Basic productivity insights</span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Personal projects</span>
+              </li>
+            </ul>
+
+            <div class="plan-cta">
+              <a href="#contact" class="btn btn-secondary btn-block pricing-btn" data-plan="Starter">Start Free</a>
+            </div>
+          </div>
+
+          <!-- Plan 02 — Pro (Recommended) -->
+          <div class="pricing-card highlighted-pricing" id="plan-pro">
+            <div class="plan-recommended-badge">Recommended</div>
+            
+            <div class="plan-header">
+              <h3 class="plan-name">Pro</h3>
+              <p class="plan-tagline">For ambitious professionals and collaborative modern teams.</p>
+              <div class="plan-price">
+                <span class="currency-symbol">₹</span>
+                <span class="price-amount">499</span>
+                <span class="price-period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="plan-features" aria-label="Pro features list">
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#477BFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Everything in Starter</strong></span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#477BFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Advanced analytics & velocity trends</span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#477BFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Seamless team collaboration</span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#477BFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Priority 24/7 dedicated support</span>
+              </li>
+              <li class="feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#477BFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Custom AI flow automations</span>
+              </li>
+            </ul>
+
+            <div class="plan-cta">
+              <a href="#contact" class="btn btn-primary btn-block pricing-btn" data-plan="Pro">Get Started with Pro</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-footnote text-center">
+          <p>All plans include standard 256-bit encryption. No surprise fees. Upgrade or cancel anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 07 — CONTACT / REQUEST DEMO
+         ================================================== -->
+    <section class="section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-wrapper">
+          <!-- Left Column: Copy & Reassurance -->
+          <div class="contact-info">
+            <span class="section-eyebrow">Get In Touch</span>
+            <h2 class="section-title" id="contact-title">Ready to work smarter?</h2>
+            <p class="contact-description">
+              Take control of your workflow and create space for what matters most. Request a personalized demo or inquire about team onboarding.
+            </p>
+
+            <div class="contact-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <div class="highlight-text">
+                  <strong>Personalized 15-minute walkthrough</strong>
+                  <span>See Flowspace mapped directly to your team's stack.</span>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="highlight-text">
+                  <strong>Rapid response team</strong>
+                  <span>Average response time under 2 hours during business days.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="direct-contact-note">
+              <span>Direct inquiries:</span>
+              <a href="mailto:hello@flowspace.app" class="direct-email">hello@flowspace.app</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Demo Form -->
+          <div class="contact-form-card">
+            <!-- Form State: Active -->
+            <form id="demo-form" class="demo-form" novalidate aria-label="Flowspace Demo Request Form">
+              <div class="form-group" id="group-name">
+                <label for="form-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input 
+                  type="text" 
+                  id="form-name" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="e.g. Alex Rivera" 
+                  required 
+                  minlength="2"
+                  autocomplete="name"
+                  aria-describedby="err-name"
+                />
+                <span class="form-error-msg" id="err-name" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" id="group-email">
+                <label for="form-email" class="form-label">Work Email <span class="required">*</span></label>
+                <input 
+                  type="email" 
+                  id="form-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="alex@company.com" 
+                  required 
+                  autocomplete="email"
+                  aria-describedby="err-email"
+                />
+                <span class="form-error-msg" id="err-email" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group" id="group-message">
+                <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea 
+                  id="form-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="4" 
+                  placeholder="Tell us about your team size, workflow challenges, or specific goals..."
+                  required
+                  minlength="10"
+                  aria-describedby="err-message"
+                ></textarea>
+                <span class="form-error-msg" id="err-message" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-submit" id="btn-submit">
+                <span>Request Demo</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="btn-arrow" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+
+              <p class="form-privacy-note">
+                By submitting, you agree to our fair data policy. No spam, ever.
+              </p>
+            </form>
+
+            <!-- Form State: Local Submission Feedback Card -->
+            <div id="form-success-card" class="form-success-card" hidden aria-live="polite">
+              <div class="success-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="success-title">Demo Request Received</h3>
+              <p class="success-message">
+                Thank you, <strong id="success-user-name">Alex</strong>! Your inquiry has been logged locally in this demo environment.
+              </p>
+              <div class="success-details-box">
+                <div class="detail-row">
+                  <span class="d-key">Logged Email:</span>
+                  <span class="d-val" id="success-user-email">alex@company.com</span>
+                </div>
+                <div class="detail-row">
+                  <span class="d-key">Status:</span>
+                  <span class="d-val text-green">Verified & Ready</span>
+                </div>
+              </div>
+              <p class="success-footnote">
+                In a production deployment, our solutions engineering team would schedule your personalized walkthrough within 2 hours.
+              </p>
+              <button type="button" class="btn btn-secondary btn-sm" id="btn-reset-form">
+                Submit Another Request
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+       SECTION 08 — FOOTER
+       ================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Brand Summary Column -->
+        <div class="footer-col footer-col-brand">
+          <a href="#hero" class="brand-logo footer-logo" aria-label="Flowspace Home">
+            <svg class="brand-mark" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <rect width="28" height="28" rx="8" fill="#171717" />
+              <path d="M8 9H20M8 14H16M8 19H20" stroke="#477BFF" stroke-width="2.2" stroke-linecap="round" />
+            </svg>
+            <span class="brand-name">Flowspace</span>
+          </a>
+          <p class="footer-tagline">
+            Make room for better work. One intelligent workspace to orchestrate tasks, insights, and human focus.
+          </p>
+          <div class="system-status">
+            <span class="status-dot-green"></span>
+            <span class="status-text">All systems operational</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Smart Task Management</a></li>
+            <li><a href="#features">Intelligent Insights</a></li>
+            <li><a href="#features">Seamless Collaboration</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#showcase">Command Center</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Company & Resources Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">About Flowspace</a></li>
+            <li><a href="#contact">Manifesto</a></li>
+            <li><a href="#contact">Security & Privacy</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact & Social Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-contact-email">
+            <span>Inquiries:</span>
+            <a href="mailto:hello@flowspace.app">hello@flowspace.app</a>
+          </p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Flowspace on Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Flowspace on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Flowspace on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Flowspace Technologies Inc. All rights reserved. Designed with Apple-inspired restraint and precision.
+        </p>
+        <div class="footer-badges">
+          <span class="badge-subtle">Vanilla JS</span>
+          <span class="badge-subtle">GSAP Motion</span>
+          <span class="badge-subtle">Lenis Smooth Scroll</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Entry Script (ES Module) -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
+
